@@ -1,5 +1,5 @@
-
-val postsXML = sc.textFile("Posts.xml")
+import org.apache.commons.lang.StringEscapeUtils
+val postsXML = sc.textFile("../Posts.xml")
 
 // to handle bad records
 case class corruptedPost(line: String)
